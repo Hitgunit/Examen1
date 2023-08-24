@@ -17,9 +17,6 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <!--ProgresBar Total-->
-
-    <!--ProgresBar Total-->
 
     <ProgressBar
         android:id="@+id/ProgressBarTotal"

@@ -13,6 +13,10 @@ class ExamenUno : AppCompatActivity() {
         binding = ActivityExamenUnoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        var toal = intent.getStringExtra("Total")
+        var cicloUno = intent.getStringExtra("CicloUno")
+        var cicloDos = intent.getStringExtra("CicloDos")
+
         binding.btnBorrar.setOnClickListener {
             onBackPressed()
         }

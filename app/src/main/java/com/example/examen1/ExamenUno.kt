@@ -12,5 +12,25 @@ class ExamenUno : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityExamenUnoBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.btnBorrar.setOnClickListener {
+            onBackPressed()
+        }
+
+        Total()
+        CicloUno()
+        CicloDos()
+    }
+
+    private fun Total(){
+
+    }
+
+    private fun CicloUno(){
+
+    }
+
+    private fun CicloDos(){
+
     }
 }

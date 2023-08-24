@@ -6,4 +6,133 @@
     android:layout_height="match_parent"
     tools:context=".ExamenUno">
 
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="156dp"
+        android:text="Borrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--ProgresBar Total-->
+
+    <!--ProgresBar Total-->
+
+    <ProgressBar
+        android:id="@+id/ProgressBarTotal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="225dp"
+        android:layout_height="217dp"
+        android:layout_marginBottom="260dp"
+        android:background="@drawable/circulo_fondo"
+        android:indeterminate="false"
+        android:progress="100"
+        android:progressDrawable="@drawable/circulo_frente"
+        app:layout_constraintBottom_toTopOf="@+id/btnBorrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/etqTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ProgressBarTotal"
+        app:layout_constraintEnd_toEndOf="@+id/ProgressBarTotal"
+        app:layout_constraintStart_toStartOf="@+id/ProgressBarTotal"
+        app:layout_constraintTop_toTopOf="@+id/ProgressBarTotal" />
+
+    <ProgressBar
+        android:id="@+id/ProgresBarCicloUno"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="173dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="240dp"
+        android:background="@drawable/circulo_fondo"
+        android:indeterminate="false"
+        android:progress="100"
+        android:progressDrawable="@drawable/circulo_frente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/etqCicloUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ProgresBarCicloUno"
+        app:layout_constraintEnd_toEndOf="@+id/ProgresBarCicloUno"
+        app:layout_constraintStart_toStartOf="@+id/ProgresBarCicloUno"
+        app:layout_constraintTop_toTopOf="@+id/ProgresBarCicloUno" />
+
+    <ProgressBar
+        android:id="@+id/ProgresBarCicloDos"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="173dp"
+        android:layout_height="156dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="240dp"
+        android:background="@drawable/circulo_fondo"
+        android:indeterminate="false"
+        android:progress="100"
+        android:progressDrawable="@drawable/circulo_frente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/etqCicloDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ProgresBarCicloDos"
+        app:layout_constraintEnd_toEndOf="@+id/ProgresBarCicloDos"
+        app:layout_constraintStart_toStartOf="@+id/ProgresBarCicloDos"
+        app:layout_constraintTop_toTopOf="@+id/ProgresBarCicloDos" />
+
+    <TextView
+        android:id="@+id/txtT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ProgressBarTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="12dp"
+        android:text="Ciclo Uno"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ProgresBarCicloUno"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/CirculoDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="16dp"
+        android:text="Ciclo Dos"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ProgresBarCicloDos"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

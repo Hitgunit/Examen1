@@ -27,8 +27,8 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "No pueden estar vacios los campos", Toast.LENGTH_LONG).show()
         } else{
             val intent = Intent(this, ExamenUno::class.java)
-            val total = intent.putExtra("Total", binding.txtTotal.text.toString())
-            val cicloUno = intent.putExtra("CicloUno", binding.txtCicloUno.text.toString())
+            intent.putExtra("Total", binding.txtTotal.text.toString())
+            intent.putExtra("CicloUno", binding.txtCicloUno.text.toString())
             intent.putExtra("CicloDos", binding.txtCicloDos.text.toString())
             startActivity(intent)
         }
